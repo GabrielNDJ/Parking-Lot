@@ -17,9 +17,7 @@
 - https://github.com/jonjonathanarias
 - https://github.com/josecolombotk
 - https://github.com/gabrielbustos23
-- https://github.com/maujoaquin
+- https://github.com/ignacioruizz
 - https://github.com/Juanpablo3011
-- https://github.com/MercedesSilva
-- https://github.com/TanTitan
-- https://github.com/Taty71
-- https://github.com/edgarispc
+
+
