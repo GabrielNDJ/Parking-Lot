@@ -1,0 +1,7 @@
+.nav-link{
+    background-color: white;
+}
+.nav-link:hover{
+    background-color: hsl(231, 97%, 55%);
+    color: white;
+}

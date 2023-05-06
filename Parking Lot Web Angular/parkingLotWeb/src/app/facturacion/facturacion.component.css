@@ -1,0 +1,14 @@
+.titulo-pag{
+    padding: 10px;   
+    border-radius: 5px;
+    background-color: hsl(231, 97%, 55%);
+    color: white;
+    vertical-align: middle;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+#cabecera{
+   background-color: hsl(231, 80%, 55%);
+}
