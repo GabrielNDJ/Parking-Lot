@@ -23,9 +23,10 @@ class clientes(models.Model):
 #clase Vehiculos
 
 class vehiculos(models.Model):
-    patente = models.CharField(max_length=30, primary_key=True)
+    idvehiculos= models.AutoField(primary_key=True)
+    patente = models.CharField(max_length=30)
     marca = models.CharField(max_length=45, blank=False)
-    modelo = models. CharField(max_length=45, blank=False)
+    modelo = models.CharField(max_length=45, blank=False)
     dni_cliente = models.ForeignKey(clientes, to_field='dni_cliente', on_delete=models.CASCADE)
     class Meta:
         db_table = 'vehiculos'
@@ -33,5 +34,5 @@ class vehiculos(models.Model):
         verbose_name_plural = 'vehiculos'
     def __unicode__(self):
         return self.nombre
-    def __str__(self) :
+    def __str__(self):
         return self.nombre
