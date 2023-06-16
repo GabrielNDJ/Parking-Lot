@@ -21,4 +21,3 @@ class SectorSerializer(serializers.ModelSerializer):
         model = sector_estacionamiento
         fields = '__all__'
         
-                               

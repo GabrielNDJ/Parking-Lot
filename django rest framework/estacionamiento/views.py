@@ -20,4 +20,4 @@ class ParcelaViewSet(viewsets.ModelViewSet):
 
 class SectorViewSet(viewsets.ModelViewSet):
     queryset = sector_estacionamiento.objects.all()
-    serializer_class = SectorSerializer         
+    serializer_class = SectorSerializer 
