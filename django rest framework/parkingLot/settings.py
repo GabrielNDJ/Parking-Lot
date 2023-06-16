@@ -142,4 +142,4 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = ["http://localhost:4200"]
 CORS_ALLOW_CREDENTIALS = True
 
-#AUTH_USER_MODEL = "estacionamiento.CustomUser"
+AUTH_USER_MODEL = "estacionamiento.CustomUser"
