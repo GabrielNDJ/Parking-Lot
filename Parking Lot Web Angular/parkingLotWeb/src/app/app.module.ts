@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { DataTablesModule } from "angular-datatables";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { headerComponent } from './header/header.componet';
@@ -12,7 +12,9 @@ import { EmpleadosComponent } from './empleados/empleados.component';
 import { FacturacionComponent } from './facturacion/facturacion.component';
 import { TarifasComponent } from './tarifas/tarifas.component';
 import { Route, RouterModule } from '@angular/router';
-import { TiendaComponent } from './tienda/tienda.component';
+import { FormularioComponent } from './form/formulario/formulario.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const Route=[ //importante para el ruteo
 
@@ -21,8 +23,8 @@ const Route=[ //importante para el ruteo
   {path:'empleado', component:EmpleadosComponent},
   {path:'facturacion', component:FacturacionComponent},
   {path:'tarifas', component:TarifasComponent},
-  {path:'tienda',Comment:TiendaComponent}
-]
+  {path:'login', component:FormularioComponent}
+];
 
 @NgModule({
   declarations: [
@@ -34,13 +36,17 @@ const Route=[ //importante para el ruteo
     ClientesComponent, 
     EmpleadosComponent, 
     FacturacionComponent, 
-    TarifasComponent, TiendaComponent,
+    TarifasComponent,
+    FormularioComponent,
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    RouterModule.forRoot(Route)// impotante para el ruteo
+    RouterModule.forRoot(Route),// impotante para el ruteo
+    ReactiveFormsModule,
+    DataTablesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

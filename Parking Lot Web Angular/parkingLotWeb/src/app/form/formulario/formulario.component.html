@@ -1,0 +1,15 @@
+<form [formGroup]="loginform" action="" class="form">
+    <div class="logo">
+        <img src="./assets/img/favicon.png" alt="logo Parking Lot">
+    </div>
+    <h1 class="title">INICIO DE SESIÓN</h1>
+    <label>
+        <i class="fa-solid fa-user"></i>
+        <input formControlName="Username" name="Username" placeholder="Username" type="text" id="username">
+    </label>
+    <label>
+        <i class="fa-solid fa-lock"></i>
+        <input formControlName="Password" name="Password" placeholder="Password" type="password" id="password">
+    </label>
+    <button id="button" class="button" >Login</button>
+</form>
