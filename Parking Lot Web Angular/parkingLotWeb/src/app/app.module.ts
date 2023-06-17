@@ -15,6 +15,7 @@ import { Route, RouterModule } from '@angular/router';
 import { FormularioComponent } from './form/formulario/formulario.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PasarelaPagoComponent } from './pasarela-pago/pasarela-pago.component';
 
 const Route=[ //importante para el ruteo
 
@@ -38,6 +39,7 @@ const Route=[ //importante para el ruteo
     FacturacionComponent, 
     TarifasComponent,
     FormularioComponent,
+    PasarelaPagoComponent,
   ],
 
   imports: [
