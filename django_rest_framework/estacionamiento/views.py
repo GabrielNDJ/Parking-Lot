@@ -8,10 +8,7 @@ import mercadopago
 import json
 from .serializer import *
 from .models import *
-
 # Create your views here.
-
-
 
 
 class LoginView(APIView):
