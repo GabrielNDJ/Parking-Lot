@@ -11,6 +11,11 @@ class CustomUser(AbstractUser):
     REQUIRED_FIELDS = ['username', 'password']
 """
 
+class CarritoCompras(models.Model):
+        producto_nombre = models.CharField(max_length=200)
+        producto_precio = models.DecimalField(max_length=10, blank=False, decimal_places=2, max_digits=10)
+        producto_cantidad = models.PositiveIntegerField()
+
 class Clientes(models.Model):
     dni_cliente = models.IntegerField(primary_key=True)
     numero_cliente = models.IntegerField(blank=False)
