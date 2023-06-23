@@ -13,13 +13,16 @@ import { FacturacionComponent } from './facturacion/facturacion.component';
 import { TarifasComponent } from './tarifas/tarifas.component';
 import { Route, RouterModule } from '@angular/router';
 import { FormularioComponent } from './form/formulario/formulario.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PasarelaPagoComponent } from './pasarela-pago/pasarela-pago.component';
+import { LoginComponent } from './layout/publico/login/login/login.component';
+import { PrincipalComponent } from './layout/privado/principal/principal/principal.component';
 
 const Route=[ //importante para el ruteo
 
   {path:'', component:AdminComponent},
+  {path:'admin', component:AdminComponent},
   {path:'clientes', component:ClientesComponent},
   {path:'empleado', component:EmpleadosComponent},
   {path:'facturacion', component:FacturacionComponent},
@@ -40,6 +43,9 @@ const Route=[ //importante para el ruteo
     TarifasComponent,
     FormularioComponent,
     PasarelaPagoComponent,
+    LoginComponent,
+    PrincipalComponent,
+    
   ],
 
   imports: [
@@ -48,7 +54,8 @@ const Route=[ //importante para el ruteo
     RouterModule.forRoot(Route),// impotante para el ruteo
     ReactiveFormsModule,
     DataTablesModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
